@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylsheet" href="websiteIndex.css">
+    <style>
+        body {
+            background-image: url("");
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: blue;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Container for flexboxes */
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        /* Style the navigation menu */
+        nav {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Style the content */
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: blue;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+        @media (max-width: 800px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+    </style>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: blue;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color:white;
+            color: black;
+        }
+
+        li a:hover:not(.active) {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<header>
+    <h2>Car World </h2>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="Lamborghini.html">Lamborghini</a></li>
+            <li><a href="Ferrari.html">Ferrari</a></li>
+            <li><a href="Bugatti.html">Buagtti</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>What we're about </h1>
+        <p>Car World provides information on all of your favorite cars . We have info on old cars, new cars , and cars that are coming the future</p>
+        <p>I Kean D'Souza decided to start this website as I was inspired by other sites like motor trend and Jalopnik. I wanted something that had all the info I wanted in one place so i made it and that how Car World was made  . </p>
+    </article>
+</section>
+
+<footer>
+<h2> A revolutionary way to learn about cars </h2>
+</footer>
+
+</body>
+</html>
